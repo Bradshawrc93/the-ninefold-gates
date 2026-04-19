@@ -1,4 +1,21 @@
 {
   "version": 1,
-  "assets": []
+  "assets": [
+    {
+      "name": "player_idle_down",
+      "type": "sprites",
+      "path": "public/assets/sprites/player_idle_down.png",
+      "width": 64,
+      "height": 64,
+      "provider": "retro-diffusion",
+      "model": "rd_plus__topdown_asset",
+      "prompt": "young male hero protagonist, spiky brown hair, blue tunic with white trim, brown belt, short sword sheathed at hip, confident idle pose",
+      "full_prompt": "young male hero protagonist, spiky brown hair, blue tunic with white trim, brown belt, short sword sheathed at hip, confident idle pose, Chrono Trigger SNES JRPG pixel art, Akira Toriyama character design, 3/4 overhead view, expressive rounded features, spiky or flowing hair, warm saturated palette, soft dark outlines (no pure black), clean anti-aliased shading, transparent background, centered, full character visible",
+      "negative_prompt": "blurry, modern anti-aliasing, 3d render, photorealistic, text, watermark, extra limbs, cropped, gritty, dark, realistic proportions, GBA style, HD-2D",
+      "seed": 2073692902,
+      "processing": [],
+      "credit_cost": 1,
+      "generated_at": "2026-04-19T16:00:28.664Z"
+    }
+  ]
 }

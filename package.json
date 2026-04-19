@@ -10,7 +10,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --write \"**/*.{ts,json,md}\""
+    "format": "prettier --write \"**/*.{ts,json,md}\"",
+    "asset:new": "node --env-file=.env tools/asset-pipeline/generate.mjs",
+    "asset:cost": "node --env-file=.env tools/asset-pipeline/generate.mjs --dry-run"
   },
   "dependencies": {
     "idb-keyval": "^6.2.1",

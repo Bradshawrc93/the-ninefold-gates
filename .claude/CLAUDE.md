@@ -60,3 +60,22 @@ Session 1 — Infrastructure (this session):
   `docs/{design,decisions}/`
 - Design doc stubs: 00-vision through 05-content-floor-01
 - Git initialized with initial commit
+
+Session 2 — Asset pipeline:
+
+- Retro Diffusion API wired end-to-end: `pnpm asset:new --name X --prompt "..."`
+  generates a PNG, writes to `public/assets/<type>/`, registers in
+  `tools/asset-pipeline/manifest.json`. `pnpm asset:cost` for dry-run.
+- Style locked to Chrono Trigger (SNES, 1995) — Toriyama character design,
+  ¾ overhead camera. Full details in `docs/design/04-art-direction.md`.
+- Default resolutions locked: 64×64 characters, 32×32 tiles, 128×128
+  portraits/bosses.
+- Reference sprite `player_idle_down.png` in manifest — use it as the
+  on-model benchmark for future character generations.
+
+## Up next
+
+Vertical-slice sessions, in technical-risk order (not narrative order):
+1. combat math core (pure TS) → 2. combat scene → 3. overworld movement
+→ 4. NPC + dialogue → 5. quest + encounter trigger → 6. save/load/permadeath
+→ 7. character creation.
